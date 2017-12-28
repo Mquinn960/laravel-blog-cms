@@ -11,27 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@getIndex');
 
-Route::get('/about', function () {
+Route::get('/contact', 'PagesController@getContact');
 
-    $var = 'This';
-
-    $tasks =  [
-
-        'Task 1',
-        'Task 2',
-        'Task 3'
-
-    ];
-
-    return view('about', [
-
-        'name' => $var,
-        'age' => 23,
-        'tasks' => $tasks
-
-    ]);
-});
+Route::get('/about', 'PagesController@getAbout');
