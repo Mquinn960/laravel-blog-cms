@@ -1,13 +1,23 @@
-<nav class="float-right">
-    <ul class="nav nav-pills float-right">
-        <li class="nav-item">
-            <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+<nav>
+    <ul>
+
+        <li>
+            <a href="/">
+                <i class="fa-li fa  fa-lg"></i><span>Home</span>
+            </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
+
+        <li>
+            <a href="/about">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
+
+        <li>
+            <a href="/contact">
+                <i class="fa-li fa  fa-lg"></i><span>Contact</span>
+            </a>
         </li>
+
     </ul>
 </nav>

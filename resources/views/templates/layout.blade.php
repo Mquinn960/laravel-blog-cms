@@ -8,18 +8,22 @@
             {{--This is the master sidebar.--}}
         {{--@show--}}
 
-        <div class="container col-md-10">
+        <div id="container">
 
-            <header class="row">
+            <header>
                 @include('includes.header')
                 @include('includes.navigation')
             </header>
 
-            <div id="main" class="row">
+            <main>
+                <section id="home">
 
-                @yield('content')
+                    <ul>
+                        @yield('content')
+                    </ul>
 
-            </div>
+                </section>
+            </main>
 
             <footer class="row">
                 @include('includes.footer')
