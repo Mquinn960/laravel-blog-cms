@@ -13,9 +13,7 @@
                 </header>
                 <main>
                     <section id="home">
-                        <ul>
-                            @yield('content')
-                        </ul>
+                        @yield('content')
                     </section>
                 </main>
                 <footer class="row">

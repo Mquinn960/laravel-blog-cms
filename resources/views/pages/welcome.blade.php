@@ -4,6 +4,7 @@
 
     @section('content')
 
+    <ul>
         <li class="first">
             <h1><a href="/" title="Style Guide">Style Guide</a></h1>
             <aside>
@@ -19,5 +20,6 @@
 
             <a href="/">Read more&hellip;</a>
         </li>
+    </ul>
 
     @endsection
