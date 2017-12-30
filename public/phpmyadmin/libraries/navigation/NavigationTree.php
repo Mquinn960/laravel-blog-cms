@@ -38,7 +38,7 @@ class NavigationTree
     private $_aPath = array();
     /**
      * @var array The virtual paths to all expanded nodes in the tree
-     *            This includes nodes created after the grouping of
+     *            This partials nodes created after the grouping of
      *            nodes has been performed
      */
     private $_vPath = array();

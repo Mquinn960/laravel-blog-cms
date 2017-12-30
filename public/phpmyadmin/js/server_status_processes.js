@@ -135,7 +135,7 @@ var processList = {
     /**
      * Return the Url Parameters
      * for autorefresh request,
-     * includes showExecuting if the filter is checked
+     * partials showExecuting if the filter is checked
      *
      * @return urlParams - url parameters with autoRefresh request
      */

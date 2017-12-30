@@ -3,7 +3,7 @@
 /**
  * Display table relations for viewing and editing
  *
- * includes phpMyAdmin relations and InnoDB relations
+ * partials phpMyAdmin relations and InnoDB relations
  *
  * @todo fix name handling: currently names with dots (.) are not properly handled
  * for internal relations (but foreign keys relations are correct)

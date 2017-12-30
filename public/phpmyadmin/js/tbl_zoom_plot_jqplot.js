@@ -323,7 +323,7 @@ AJAX.registerOnload('tbl_zoom_plot_jqplot.js', function () {
         //Update the chart series and replot
         if (xChange || yChange) {
             //Logic similar to plot generation, replot only if xAxis changes or yAxis changes.
-            //Code includes a lot of checks so as to replot only when necessary
+            //Code partials a lot of checks so as to replot only when necessary
             if (xChange) {
                 xCord[searchedDataKey] = selectedRow[xLabel];
                 // [searchedDataKey][0] contains the x value

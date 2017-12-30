@@ -1,7 +1,7 @@
 <?php
 /* vim: set expandtab sw=4 ts=4 sts=4: */
 /**
- * Common includes for the table level views
+ * Common partials for the table level views
  *
  * @package PhpMyAdmin
  */

@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Mquinn
- * Date: 28/12/2017
- * Time: 14:51
- */
 
 namespace App\Http\Controllers;
 
@@ -25,12 +19,16 @@ class PagesController extends Controller {
         $first = 'Matthew';
         $last = 'Quinn';
         $email = 'matt@mquinn.co.uk';
+        $github = 'https://github.com/Mquinn960';
+        $cv_link = '/download.pdf';
 
         $fullname = $first . " " . $last;
 
         $data = [];
         $data['email'] = $email;
         $data['fullname'] = $fullname;
+        $data['github'] = $github;
+        $data['cv_link'] = $cv_link;
 
         return view('pages.about')->withData($data);
 

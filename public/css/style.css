@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: "Roboto Slab", serif;
+    font-family: "Inconsolata", serif;
     color: #333333;
 }
 
@@ -26,14 +26,19 @@ time {
 }
 
 #container > * {
-    width: 700px;
+    width: 960px;
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
     #container > * {
         width: auto;
         margin: 0 1.2em;
+    }
+}
+@media only screen and (max-width: 350px) {
+    #container header nav ul {
+        font-size: 0.8rem;
     }
 }
 
@@ -94,8 +99,12 @@ time {
 
 #container main {
     flex: 1 0 0;
-    line-height: 1.5;
+    line-height: 1.9;
     font-size: 1.2rem;
+}
+
+#container main section ul #list h2 {
+    line-height: 1.9;
 }
 
 #container main section#home ul {

@@ -96,7 +96,7 @@ class ExportSql extends ExportPlugin
             $leaf = new BoolPropertyItem(
                 'include_comments',
                 __(
-                    'Display comments <i>(includes info such as export'
+                    'Display comments <i>(partials info such as export'
                     . ' timestamp, PHP version, and server version)</i>'
                 )
             );

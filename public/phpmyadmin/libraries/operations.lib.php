@@ -833,7 +833,7 @@ function PMA_getHtmlForMoveTable()
         . ' maxlength="64" required="required" '
         . 'value="' . htmlspecialchars($GLOBALS['table']) . '" /><br />';
 
-    // starting with MySQL 5.0.24, SHOW CREATE TABLE includes the AUTO_INCREMENT
+    // starting with MySQL 5.0.24, SHOW CREATE TABLE partials the AUTO_INCREMENT
     // next value but users can decide if they want it or not for the operation
 
     $html_output .= '<input type="checkbox" name="sql_auto_increment" '

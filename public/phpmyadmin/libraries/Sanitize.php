@@ -1,7 +1,7 @@
 <?php
 /* vim: set expandtab sw=4 ts=4 sts=4: */
 /**
- * This class includes various sanitization methods that can be called statically
+ * This class partials various sanitization methods that can be called statically
  *
  * @package PhpMyAdmin
  */
@@ -10,7 +10,7 @@ namespace PMA\libraries;
 use PMA\libraries\Util;
 
 /**
- * This class includes various sanitization methods that can be called statically
+ * This class partials various sanitization methods that can be called statically
  *
  * @package PhpMyAdmin
  */

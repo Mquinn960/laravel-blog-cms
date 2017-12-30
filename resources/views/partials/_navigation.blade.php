@@ -8,8 +8,20 @@
         </li>
 
         <li>
+            <a href="/posts">
+                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/projects">
+                <i class="fa-li fa  fa-lg"></i><span>Projects</span>
+            </a>
+        </li>
+
+        <li>
             <a href="/about">
-                <i class="fa-li fa  fa-lg"></i><span>About</span>
+                <i class="fa-li fa  fa-lg"></i><span>About Me</span>
             </a>
         </li>
 

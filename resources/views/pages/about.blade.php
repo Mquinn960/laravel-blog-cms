@@ -1,92 +1,23 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('templates.layout')
 
-    <title>Laravel</title>
+@section('title', '| About')
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+@section('content')
 
-    <!-- Styles -->
-    <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-            height: 100vh;
-            margin: 0;
-        }
+    <article>
 
-        .full-height {
-            height: 100vh;
-        }
+        <h1>About Me</h1>
 
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
+        <p>My name is {{ $data['fullname'] }}, and I am a programmer working mostly in PHP.</p>
 
-        .position-ref {
-            position: relative;
-        }
+        <ul>
+            <li><a href="">PHP</a></li>
+            <li><a href="">Laravel</a></li>
+        </ul>
 
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
+        <p>Download my CV <a href="{{ $data['cv_link'] }}">here</a>.</p>
+        <p>See more of my projects on my <a href="{{ $data['github'] }}">GitHub</a>.</p>
 
-        .content {
-            text-align: center;
-        }
+    </article>
 
-        .title {
-            font-size: 84px;
-        }
-
-        .links > a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-    </style>
-</head>
-<body>
-<div class="flex-center position-ref full-height">
-    @if (Route::has('login'))
-        <div class="top-right links">
-            @if (Auth::check())
-                <a href="{{ url('/home') }}">Home</a>
-            @else
-                <a href="{{ url('/login') }}">Login</a>
-                <a href="{{ url('/register') }}">Register</a>
-            @endif
-        </div>
-    @endif
-
-    <div class="content">
-
-        <div class="content">
-            <div class="title m-b-md">
-                About {{$data['fullname']}}
-            </div>
-            <p>Email me at {{$data['email']}}</p>
-        </div>
-
-    </div>
-</div>
-</body>
-</html>
+@endsection

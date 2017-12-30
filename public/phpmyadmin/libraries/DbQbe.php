@@ -1612,7 +1612,7 @@ class DbQbe
         $join = '';
 
         // Tables that can not be combined with the table cluster
-        // which includes master table
+        // which partials master table
         $unfinalized = array_diff($searchTables, array_keys($finalized));
         if (count($unfinalized) > 0) {
 

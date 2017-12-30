@@ -501,7 +501,7 @@ function PMA_sendHeaderLocation($uri, $use_refresh = false)
 }
 
 /**
- * Outputs application/json headers. This includes no caching.
+ * Outputs application/json headers. This partials no caching.
  *
  * @return void
  */

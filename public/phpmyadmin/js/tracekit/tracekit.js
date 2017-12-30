@@ -849,7 +849,7 @@ TraceKit.computeStackTrace = (function computeStackTraceWrapper() {
 
     /**
      * NOT TESTED.
-     * Computes stack trace information from an error message that includes
+     * Computes stack trace information from an error message that partials
      * the stack trace.
      * Opera 9 and earlier use this method if the option to show stack
      * traces is turned on in opera:config.
@@ -859,7 +859,7 @@ TraceKit.computeStackTrace = (function computeStackTraceWrapper() {
      */
     function computeStackTraceFromOperaMultiLineMessage(ex) {
         // TODO: Clean this function up
-        // Opera includes a stack trace into the exception message. An example is:
+        // Opera partials a stack trace into the exception message. An example is:
         //
         // Statement on line 3: Undefined variable: undefinedFunc
         // Backtrace:
