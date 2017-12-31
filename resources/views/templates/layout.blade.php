@@ -8,6 +8,7 @@
         <body>
             <div id="container">
                 <header>
+                    @include('partials._messages')
                     @include('partials._header')
                     @include('partials._navigation')
                 </header>

@@ -9,7 +9,6 @@
 @endsection
 
 @section('content')
-
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <h1>Create New Post</h1>
@@ -29,5 +28,4 @@
             </form>
         </div>
     </div>﻿
-
 @endsection

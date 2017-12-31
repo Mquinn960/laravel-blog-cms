@@ -8,7 +8,7 @@
         </li>
 
         <li>
-            <a href="/posts">
+            <a href="/archive">
                 <i class="fa-li fa  fa-lg"></i><span>Posts</span>
             </a>
         </li>

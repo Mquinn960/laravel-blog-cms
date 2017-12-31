@@ -10,7 +10,16 @@ class PagesController extends Controller {
         # receive data back from the model
         # compile or process model data again
         # pass this data to the correct view
-        return view('pages.welcome');
+        return view('pages.home');
+    }
+
+    public function getArchive() {
+        # process variable data or params
+        # talk to the model
+        # receive data back from the model
+        # compile or process model data again
+        # pass this data to the correct view
+        return view('posts.archive');
     }
 
     public function getAbout()

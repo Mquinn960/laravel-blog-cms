@@ -384,3 +384,11 @@ ul.pagination {
 ul.pagination li {
     padding: 0 1em;
 }
+
+.top-alert-message {
+    margin-top: 1em;
+}
+
+.post-title {
+    word-wrap: break-word;
+}

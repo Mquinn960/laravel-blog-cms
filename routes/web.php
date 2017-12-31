@@ -12,11 +12,11 @@
 */
 
 // Page Routes
-Route::get('/', 'PagesController@getIndex');
+Route::get('/', 'PostController@index');
 Route::get('/contact', 'PagesController@getContact');
 Route::get('/about', 'PagesController@getAbout');
 Route::get('/projects', 'ProjectsController@getProjects');
-Route::get('/posts', 'PostsController@getPosts');
+Route::get('/archive', 'PagesController@getArchive');
 
 // Resource Routes
 Route::resource('post', 'PostController');
