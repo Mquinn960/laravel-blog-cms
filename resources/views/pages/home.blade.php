@@ -1,24 +1,24 @@
 @extends('templates.layout')
 
-    @section('title', '| Home')
+@section('title', '| Home')
 
-    @section('content')
+@section('ActiveHome', 'active')
 
-    <ul>
-        @foreach ($posts as $post)
-            <li>
-                <h1 class="post-title"><a href="{{ route('post.show', $post->id) }}" title="{{ $post->title }}">{{ $post->title }}</a></h1>
-                <aside>
-                    <ul>
-                        <li>
-                            <time class="post-date" datetime="{{ $post->created_at }}">{{ $post->created_at->format('M j, Y') }}</time>
-                        </li>
-                    </ul>
-                </aside>
-                <p>{{ str_limit($post->body, $limit = 200, $end = '...') }}</p>
-                <a href="{{ route('post.show', $post->id) }}">Read more</a>
-            </li>
-        @endforeach
-    </ul>
-
-    @endsection
+@section('content')
+<ul>
+    @foreach ($posts as $post)
+        <li>
+            <h1 class="post-title"><a href="{{ route('post.show', $post->id) }}" title="{{ $post->title }}">{{ $post->title }}</a></h1>
+            <aside>
+                <ul>
+                    <li>
+                        <time class="post-date" datetime="{{ $post->created_at }}">{{ $post->created_at->format('M j, Y') }}</time>
+                    </li>
+                </ul>
+            </aside>
+            <p>{{ str_limit($post->body, $limit = 200, $end = '...') }}</p>
+            <a href="{{ route('post.show', $post->id) }}">Read more</a>
+        </li>
+    @endforeach
+</ul>
+@endsection

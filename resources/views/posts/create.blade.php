@@ -4,7 +4,7 @@
 
 @section('header_scripts')
 
-    @include('partials._jquery_parsley')
+@include('partials._jquery_parsley')
 
 @endsection
 
