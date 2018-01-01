@@ -1,6 +1,6 @@
 @extends('templates.layout')
 
-@section('title', '| Blog post')
+@section('title', '| Blog Post')
 
 @section('content')
 <article>
@@ -19,7 +19,11 @@
             <a href="{{ route('post.edit', $post->id) }}" class="btn btn-primary btn-block">Edit</a>
         </div>
         <div class="col-sm-2">
-            <a href="{{ route('post.destroy', $post->id) }}" class="btn btn-danger btn-block">Delete</a>
+            <form method="POST" action="{{ route('post.destroy', $post->id) }}">
+                <input type="submit" value="Delete" class="btn btn-danger btn-block">
+                <input type="hidden" name="_token" value="{{ Session::token() }}">
+                {{ method_field('DELETE') }}
+            </form>﻿
         </div>
     </div>
 </article>

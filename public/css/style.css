@@ -392,3 +392,7 @@ ul.pagination li {
 .post-title {
     word-wrap: break-word;
 }
+
+#edit-post-form #form-buttons-row {
+    margin: 0.5em 0 0.5em 0;
+}
