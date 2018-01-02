@@ -12,14 +12,8 @@
         {{ csrf_field() }}
         <label name="title">Title:</label>
         <textarea type="text" data-parsley-required data-parsley-trigger="change" data-parsley-maxlength="255" class="form-control input-lg" id="title" name="title" rows="1" style="resize:none;">{{ $post->title }}</textarea>
-        <aside>
-            <ul>
-                <li>
-                    <time class="post-date" datetime="{{ $post->created_at }}">{{ $post->created_at->format('M j, Y') }}</time>
-                </li>
-                <li>4 min read</li>
-            </ul>
-        </aside>
+        <label name="slug">Slug:</label>
+        <textarea type="slug" data-parsley-required data-parsley-trigger="change" data-parsley-minlength="5" data-parsley-maxlength="255" class="form-control input-lg" id="slug" name="slug" rows="1" style="resize:none;">{{ $post->slug }}</textarea>
         <label name="body">Body:</label>
         <textarea type="text" class="form-control input-lg" data-parsley-required id="body" name="body" rows="10">{{ $post->body }}</textarea>
         <div id="form-buttons-row" class="row">
