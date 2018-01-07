@@ -11,13 +11,15 @@
 |
 */
 
-// Page Routes
+// Get Routes
 Route::get('blog/{slug}', ['uses' => 'BlogController@getSingle','as' => 'blog.single'])->where('slug', '[\w\d\-\_]+');
+
+// Get Routes => Static Routes
 Route::get('/', 'PostController@index');
 Route::get('/contact', 'PagesController@getContact');
 Route::get('/about', 'PagesController@getAbout');
 Route::get('/projects', 'ProjectsController@getProjects');
-Route::get('/archive', 'PagesController@getArchive');
+Route::get('/archive', 'BlogController@getIndex');
 
 // Resource Routes
 Route::resource('post', 'PostController');

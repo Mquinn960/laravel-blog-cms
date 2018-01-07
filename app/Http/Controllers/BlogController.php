@@ -7,6 +7,11 @@ use App\Post;
 
 class BlogController extends Controller
 {
+    public function getIndex(){
+        $posts = POST::paginate(10);
+        return view('posts.archive')->withPosts($posts);
+    }
+
     public function getSingle($slug){
         // fetch from database based on slug
         $post = Post::where('slug', '=', $slug)->first();

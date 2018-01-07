@@ -94,7 +94,7 @@ time {
 }
 
 #container header nav ul li a.active {
-    border-bottom: 0.5em solid #666666;
+    border-bottom: 0.3em solid #666666;
 }
 
 #container main {

@@ -7,7 +7,7 @@
         </li>
         <li>
             <a class="@yield('ActiveArchive')" href="/archive">
-                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+                <i class="fa-li fa  fa-lg"></i><span>Archive</span>
             </a>
         </li>
         <li>
