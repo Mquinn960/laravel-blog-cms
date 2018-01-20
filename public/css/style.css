@@ -396,3 +396,7 @@ ul.pagination li {
 #edit-post-form #form-buttons-row {
     margin: 0.5em 0 0.5em 0;
 }
+
+#login-status {
+    float:right;
+}
