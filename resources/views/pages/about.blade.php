@@ -1,5 +1,7 @@
 @extends('templates.layout')
 
+@section('ActiveAbout', 'active')
+
 @section('title', '| About')
 
 @section('content')

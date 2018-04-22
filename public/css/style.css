@@ -400,3 +400,8 @@ ul.pagination li {
 #login-status {
     float:right;
 }
+
+.admin-button {
+    margin: 0 auto;
+    width: 50% !important;
+}

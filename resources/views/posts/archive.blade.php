@@ -10,9 +10,6 @@
         <div class="col-sm-10">
             <h2>Archive</h2>
         </div>
-        <div class="col-sm-2">
-            <a href="{{ route('post.create') }}" class="btn btn-primary btn-block">Create</a>
-        </div>
     </div>
     <h3 style="padding-top:10px">{{ $year = $posts[0]->created_at->format('Y') }}</h3>
     <ul>

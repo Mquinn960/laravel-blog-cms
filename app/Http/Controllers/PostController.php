@@ -8,6 +8,10 @@ use Session;
 
 class PostController extends Controller
 {
+
+    public function __construct(){
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -19,7 +23,7 @@ class PostController extends Controller
         $posts = Post::orderBy('id','desc')->paginate(5);
 
         // return a view and pass in the above variable
-        return view('pages.home')->withPosts($posts);
+        return view('posts.admin.index')->withPosts($posts);
 
     }
 
@@ -30,7 +34,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('posts.create');
+        return view('posts.admin.create');
     }
 
     /**
@@ -74,7 +78,7 @@ class PostController extends Controller
     {
         $post = Post::find($id);
 
-        return view('posts.post')->withPost($post);
+        return view('posts.admin.post')->withPost($post);
     }
 
     /**
@@ -89,7 +93,7 @@ class PostController extends Controller
         $post = Post::find($id);
 
         // return the view and pass in the var we previously created
-        return view('posts.edit')->withPost($post);
+        return view('posts.admin.edit')->withPost($post);
 
     }
 
@@ -146,4 +150,5 @@ class PostController extends Controller
         // reroute to home
         return redirect()->route('post.index');
     }
+
 }

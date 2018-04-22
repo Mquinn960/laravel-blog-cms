@@ -8,7 +8,7 @@
 <ul>
     @forelse ($posts as $post)
         <li>
-            <h1 class="post-title"><a href="{{ route('post.show', $post->id) }}" title="{{ $post->title }}">{{ $post->title }}</a></h1>
+            <h1 class="post-title"><a href="{{ route('blog.single', $post->slug) }}" title="{{ $post->title }}">{{ $post->title }}</a></h1>
             <aside>
                 <ul>
                     <li>
@@ -17,7 +17,7 @@
                 </ul>
             </aside>
             <p>{{ str_limit($post->body, $limit = 200, $end = '...') }}</p>
-            <a href="{{ route('post.show', $post->id) }}">Read more</a>
+            <a href="{{ route('blog.single', $post->slug) }}">Read more</a>
         </li>
     @empty
         <li><h1>No posts!</h1></li>
