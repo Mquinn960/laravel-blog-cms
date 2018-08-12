@@ -31,8 +31,7 @@
                 <code>
 {
     "contact": {
-        "email": "matt@mquinn.co.uk",
-        "telephone": "1DA289FDF"
+        "email": "matt@mquinn.co.uk"
     }
 }
                 </code>

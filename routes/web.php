@@ -20,6 +20,7 @@ Route::get('blog/{slug}', ['uses' => 'BlogController@getSingle','as' => 'blog.si
 Route::get('/admin/posts', 'PostController@index')->name('index');
 
 Route::get('/', 'BlogController@getIndex');
+Route::get('/home', 'BlogController@getIndex')->name('home');
 Route::get('/contact', 'PagesController@getContact');
 Route::get('/about', 'PagesController@getAbout');
 Route::get('/projects', 'ProjectsController@getProjects');
@@ -31,4 +32,3 @@ Route::resource('post', 'PostController');
 Auth::routes();
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
-Route::get('/home', 'HomeController@index')->name('home');

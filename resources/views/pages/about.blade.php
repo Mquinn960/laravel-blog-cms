@@ -13,6 +13,6 @@
         <li><a href="">Laravel</a></li>
     </ul>
     <p>Download my CV <a href="{{ $data['cv_link'] }}">here</a>.</p>
-    <p>See more of my projects on my <a href="{{ $data['github'] }}">GitHub</a>.</p>
+    <p>See more of my projects on <a href="{{ $data['github'] }}">GitHub</a>.</p>
 </article>
 @endsection

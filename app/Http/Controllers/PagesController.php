@@ -25,17 +25,14 @@ class PagesController extends Controller {
     public function getAbout()
     {
 
-        $first = 'Matthew';
-        $last = 'Quinn';
-        $email = 'matt@mquinn.co.uk';
+        $name = 'Matt';
+        $email = 'matt@example.com';
         $github = 'https://github.com/Mquinn960';
-        $cv_link = '/download.pdf';
-
-        $fullname = $first . " " . $last;
+        $cv_link = '/mquinn_cv.pdf';
 
         $data = [];
         $data['email'] = $email;
-        $data['fullname'] = $fullname;
+        $data['fullname'] = $name;
         $data['github'] = $github;
         $data['cv_link'] = $cv_link;
 

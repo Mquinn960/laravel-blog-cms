@@ -16,6 +16,7 @@
                     </li>
                 </ul>
             </aside>
+            {{--<p>Posted in: {{ $post->category->name }}</p>--}}
             <p>{{ str_limit($post->body, $limit = 200, $end = '...') }}</p>
             <a href="{{ route('blog.single', $post->slug) }}">Read more</a>
         </li>
