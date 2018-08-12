@@ -1,16 +1,12 @@
 # Project
 
-Professional blog website and CMS made in Laravel
+Minimalist professional blog website and CMS made in Laravel
+
+![alt text](https://raw.githubusercontent.com/Mquinn960/laravel-blog-cms/master/public/preview.png)
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-* [PHP 7](http://php.net/)
-* [Laravel](https://laravel.com/) - PHP MVC Framework
-* [Composer](https://getcomposer.org//) - PHP Dependency Management
 
 ### Installing
 
