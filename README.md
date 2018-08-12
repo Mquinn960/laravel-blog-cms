@@ -28,4 +28,4 @@ Branch some changes and submit a pull request
 
 ## Authors
 
-* **Matthew Quinn** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Matthew Quinn** - [Mquinn](https://mquinn.co.uk)
