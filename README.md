@@ -1,4 +1,4 @@
-# Project
+# Laravel Blog CMS
 
 Minimalist professional blog website and CMS made in Laravel
 
@@ -28,4 +28,4 @@ Branch some changes and submit a pull request
 
 ## Authors
 
-* **Matthew Quinn** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Matthew Quinn** - [Mquinn](https://mquinn.co.uk)
