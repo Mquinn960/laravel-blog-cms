@@ -3,6 +3,7 @@
 Minimalist professional blog website and CMS made in Laravel
 
 ![alt text](https://raw.githubusercontent.com/Mquinn960/laravel-blog-cms/master/public/preview.png)
+![Alt text](/public/preview.jpg?raw=true "Preview")
 
 ## Getting Started
 
