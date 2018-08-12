@@ -1,4 +1,4 @@
-# Project
+# Laravel Blog CMS
 
 Minimalist professional blog website and CMS made in Laravel
 
