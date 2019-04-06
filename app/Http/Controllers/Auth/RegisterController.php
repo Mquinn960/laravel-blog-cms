@@ -69,15 +69,15 @@ class RegisterController extends Controller
         ]);
     }
 
-    // Overrides to disable registration
-    public function showRegistrationForm()
-    {
-        return redirect('login');
-    }
+    // // Overrides to disable registration
+    // public function showRegistrationForm()
+    // {
+    //     return redirect('login');
+    // }
 
-    public function register()
-    {
-        abort(404);
-    }
+    // public function register()
+    // {
+    //     abort(404);
+    // }
 
 }
