@@ -20,10 +20,10 @@
                 <i class="fa-li fa  fa-lg"></i><span>About Me</span>
             </a>
         </li>
-        <li>
+        <!-- <li>
             <a class="@yield('ActiveContact')" href="/contact">
                 <i class="fa-li fa  fa-lg"></i><span>Contact</span>
             </a>
-        </li>
+        </li> -->
     </ul>
 </nav>

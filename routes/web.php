@@ -26,6 +26,10 @@ Route::get('/about', 'PagesController@getAbout');
 Route::get('/projects', 'ProjectsController@getProjects');
 Route::get('/archive', 'BlogController@getArchive');
 
+// Post routes
+
+Route::post('/contact', 'ContactFormController@sendMail');
+
 // Resource Routes
 Route::resource('post', 'PostController');
 
