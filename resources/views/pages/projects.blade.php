@@ -8,6 +8,12 @@
 <article>
     <h1>Personal Projects</h1>
     <ul>
+        <li><a href="https://github.com/Mquinn960/sign-language">Sign Language App</a></li>
+        <p>Android (Java, OpenCV) Android app for recognising Sign Lanaguge in real time</p>
+        <li><a href="https://github.com/Mquinn960/offline-trainer">Offline Trainer</a></li>
+        <p>Java (OpenCV) Offline training module for Sign Language recognition app</p>
+        <li><a href="https://github.com/Mquinn960/dataset-creator">Dataset Creator</a></li>
+        <p>Python (OpenCV) Helper program for creating machine learning datasets</p>
         <li><a href="https://github.com/Mquinn960/mquinn-blog">Mquinn Blog Site</a></li>
         <p>PHP (Laravel, MySQL) CMS and site for my professional blog</p>
         <li><a href="https://github.com/Mquinn960/wispassist">WISP-Assist</a></li>
