@@ -26,7 +26,7 @@ class PagesController extends Controller {
     {
 
         $name = 'Matt';
-        $email = 'matt@example.com';
+        $email = 'matt@mquinn.co.uk';
         $github = 'https://github.com/Mquinn960';
         $cv_link = '/mquinn_cv.pdf';
 
